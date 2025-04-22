@@ -18,5 +18,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
-    - name: Start rebuild
-      run: browser example.com
+    - name: Launch URL Action
+        uses: kozakl/launch-url-action@v1.1.0
+           with:
+             url: example.com
